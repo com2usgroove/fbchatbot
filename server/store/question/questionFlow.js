@@ -90,7 +90,7 @@ export default class QuestionFlow {
 
       if (element.buttons) {
         let button = element.buttons.find((button) => {
-          return button.url == payload;
+          return button.next === payload;
         });
 
         if (button && button.next) {

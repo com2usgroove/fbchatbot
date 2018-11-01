@@ -116,7 +116,7 @@ var QuestionFlow = function () {
 
         if (element.buttons) {
           var button = element.buttons.find(function (button) {
-            return button.url == payload;
+            return button.next === payload;
           });
 
           if (button && button.next) {

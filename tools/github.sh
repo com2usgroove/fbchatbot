@@ -1,5 +1,7 @@
 echo "repo?"
 read GITHUBREPO
+echo "github commit msg?"
+read GITHUBMSG
 
 npm run build
 
@@ -17,6 +19,6 @@ mv README.md README.md.tmp
 node -e "var fs=require('fs');var dot=require('dot');console.log(dot.template(fs.readFileSync('./README.md.tmp'), Object.assign({}, dot.templateSettings, {strip: false}))({GITHUBREPO: '$GITHUBREPO'.replace('git@github.com:', 'https://github.com/')}));" >README.md
 rm README.md.tmp
 git add .
-git commit -a -m 'Update'
+git commit -a -m "Update: ${GITHUBMSG}"
 git push -f
 cd -

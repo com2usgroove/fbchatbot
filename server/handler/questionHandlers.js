@@ -126,7 +126,6 @@ export let questionHandlerMap = {
                 var obj = {
                   title: render_template(element.title, userProfile),
                   subtitle: render_template(element.subtitle, userProfile),
-                  image_url: element.image_url,
                 };
 
                 if (element.image_url) {

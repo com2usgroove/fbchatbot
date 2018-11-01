@@ -123,8 +123,7 @@ var questionHandlerMap = {
             elements: question.elements.map(function (element) {
               var obj = {
                 title: (0, _TemplateHelper2.default)(element.title, userProfile),
-                subtitle: (0, _TemplateHelper2.default)(element.subtitle, userProfile),
-                image_url: element.image_url
+                subtitle: (0, _TemplateHelper2.default)(element.subtitle, userProfile)
               };
 
               if (element.image_url) {
