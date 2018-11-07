@@ -8,8 +8,8 @@
     "heroku-redis:hobby-dev"
   ],
   "env": {
-    "FB_APP_ID": null,
-    "FB_APP_SECRET": null,
-    "HEROKU_APP_NAME": null
+    "FB_APP_ID": '2128821617435880',
+    "FB_APP_SECRET": '1e0854c608941dba60d8d1f4bbbeca07',
+    "HEROKU_APP_NAME": 'yongsu-chatbot'
   }
 }
